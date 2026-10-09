@@ -28,3 +28,4 @@ jobs:
       with:
         name: shurikenmod-lib
         path: build/libshurikenmod.so
+        
