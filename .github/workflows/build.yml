@@ -8,10 +8,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Android NDK
-      uses: nttld/setup-ndk@v1
+      uses: nttld/setup-ndk@v3
       with:
         ndk-version: r23b
         add-to-path: true
@@ -24,7 +24,7 @@ jobs:
         cmake --build .
 
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: shurikenmod-lib
         path: build/libshurikenmod.so
